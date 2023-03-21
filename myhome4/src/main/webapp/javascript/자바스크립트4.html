@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<button type="button" class="button" style="color: #d8baff">배경색바꾸기1</button>
+	<br />
+	<button type="button" class="button" style="color: #f99985">배경색바꾸기2</button>
+	<br />
+	<button type="button" class="button" style="color: #fff540">배경색바꾸기3</button>
+	<br />
+	<button type="button" class="button" style="color: #000000">배경색바꾸기4</button>
+	<br />
+	<button type="button" class="button" style="color: #9ce8ff">배경색바꾸기5</button>
+	<br />
+</body>
+</html>
+<script>
+	//document.getElementsByTagName("body")[0].style.background="pink";
+	
+	window.onload=()=>{
+	buttons = document.getElementsByClassName("button");
+	for(i=0; i<buttons.length; i++){
+		buttons[i].addEventListener("click", (e)=>{
+			console.log(e);
+			console.log(e.target);
+			body = document.getElementsByTagName("body")[0];
+			body.style.background = e.target.style.color;
+		})
+	}
+	}
+	
+</script>

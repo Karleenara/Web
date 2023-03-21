@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>객체접근방법</h1>
+
+	<h3 id="Language1">자바</h3>
+	<h3 id="Language2">JSP</h3>
+	<h3 id="Language3">서블릿</h3>
+	<h3 id="Language4">REACT</h3>
+
+</body>
+</html>
+<script>
+	var ob1 = document.getElementById("laguage1");
+	console.log(ob1);
+	//console.log(ob1.length);
+	//ob1.style.color="violet";
+
+	color = [ "", "magenta", "yellow", "gray", "blue" ];
+	for (i = 1; i < 5; i++) {
+		document.getElementById("Language" + i).style.color = color[i];
+	}
+</script>
+
+

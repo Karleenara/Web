@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+	let scoreList=[
+		{name:"홍길동", kor:90, eng:80, mat:100},
+		{name:"김길동", kor:20, eng:30, mat:80},
+		{name:"이길동", kor:50, eng:30, mat:60},
+		{name:"박길동", kor:92, eng:56, mat:100},
+		{name:"최길동", kor:100, eng:40, mat:80},
+	]
+	
+	for(score of scoreList){
+		score.total = score.kor + score.mat + score.eng;
+		score.avg = score.total/3
+	}
+	
+	scoreList.forEach((score)=>{
+		console.log(score.name, score.kor, score.eng, score.mat, score.total, score.avg)
+	})
+	
+</script>

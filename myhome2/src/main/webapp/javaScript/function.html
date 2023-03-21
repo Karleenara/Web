@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+	function hello(name){
+		console.log("안녕"+ name);
+	}
+	
+	// 함수 호출
+	hello("홍길동");
+	console.log(hello("장길산"));
+	// undefined 출력됨
+	
+	// 1 ~ N까지 출력하는 함수 만들기
+	function showNumber(limit){
+		for(i=1; i<=limit; i++){
+			console.log("i = ", i);
+		}
+	}
+	
+	// 함수 호출
+	showNumber(10);
+	showNumber(3);
+	
+	// 기본값 - 매개변수에 기본값을 부여할 수 있다.
+	// overloading 지원 x
+	function showNumber2(limit=10){
+		for(i=1; i<=limit; i++){
+			console.log("i=", i);
+		}
+	}
+	showNumber2(); // 기본값 적용
+	showNumber2(5); // 함수를 여러개 만든 듯이 작용
+	
+	function add(x=10, y=20, z=30){
+		console.log("x=",x);
+		console.log("y=",y);
+		console.log("z=",z);
+		return x+y+z;
+	}
+	
+	console.log(add()); 	 // 60
+	console.log(add(1));	 // 51
+	console.log(add(1,2));	 // 33
+	console.log(add(1,2,3)); // 6	
+	
+	function myfunc(a, b, c=1, d=2){
+		console.log("a=", a);
+		console.log("b=", b);
+		console.log("c=", c);
+		console.log("d=", d);
+	}
+	
+	myfunc();
+	myfunc(10);
+	myfunc(10,20);
+	// 매개변수 없는 건 undefined 반환
+	// 잘됨
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</script>

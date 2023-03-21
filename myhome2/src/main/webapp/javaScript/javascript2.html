@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+	var x = 10;
+	var y = 20;
+	var z;
+
+	z = x + y;
+	// console.log 함수 : 콘솔창에 결과 출력
+	// 디버깅용 함수. 브라우저에서 f12버튼 누르고 콘솔탭 선택하면 보임
+	// 자바의 System.out.print 함수처럼 출력 특화용 아니고 대충 데이터 출력이라 사용방법 다양x
+	console.log(z);
+	// 브라우저에 출력
+	document.write(z);
+
+	// 다른 언어들은 if 문 안에서 다시 지정했으니까 변수를 새로 만들고 데이터를 넣는다.
+	// 이 변수는 if문이 종료하면 사라짐
+	// 그러나 자바스크립트는 if문 밖에서 사용하는 변수 msg 와 여기서 선언된 변수 msg를 같은 것으로 봄
+	msg = "안녕";
+	if (true) {
+		var msg = "방가";
+	}
+	console.log(msg); // 방가 출력 - 이걸 호이스팅이라고 함
+	
+	a = 15;
+	var a = 20;
+	console.log(a); // 20 출력
+	
+	b = 20;
+	let b = 200;
+	console.log(b); // ReferenceError
+</script>

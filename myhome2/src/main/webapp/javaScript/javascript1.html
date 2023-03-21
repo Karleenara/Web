@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 onclick="goDisplay()" >자바스크립트</h1>
+	<p>자바스크립트는 브라우저에서 사용되는 클라이언트 스크립트 언어</p>
+	<p id="contents" style="display:none">
+	번역기는 브라우저이고 인터프리터 언어. 인터프리터 언어는 한줄 읽어서 해석해서 바로 실행
+	보통 교육용이나 간단한 일을 하기 위한 언어로 생각되었는데 현재 파이썬도 인터프리터언어.
+	파이썬이 딥러닝등의 업무 등을 수행하고 웹프레임워크 등 제한없이 일을 하는거로 봐서 교육용언어라는 인식은 불식.
+	인터프리터 언어는 미리 변수를 선언할 필요 없음
+	모든 데이터 타입은 참조이므로 별도의 타입 지정할 필요도 x
+	그래서 변수를 선언할 경우 var 키워드 사용.
+	브라우저에 있는 엔진인 V8을 브라우저에서 독립시켜 별도의 엔진으로 만들었다.-> 지금의 nodejs
+	nodejs는 자바스크립트와 유사한 언어지만 자바스크립트는 아니다. 
+	nodejs는 서버를 만들수 있는 서버스크립트언어이고, 
+	현재 자바스크립트 라이브러리들인 jquery, angular, react, vue 등이 nodejs에서 작동되도록 설계됨
+	앞으로 자바스크립트의 역할이 훨씬 커져서 많은 공부를 해야함
+	</p>
+
+</body>
+</html>
+
+<script>
+function goDisplay(){
+	// p태그에 접근하려면 document.getElementById("아이디");
+	var p = document.getElementById("contents"); // 참조만 가져옴
+	p.style.display = "block"; // none과 block은 반대
+}
+</script>

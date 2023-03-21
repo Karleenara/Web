@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+	let payList=[
+		{name:"홍길동", time: 35, timepay: 10000},
+		{name:"김길동", time: 15, timepay: 10000},
+		{name:"이길동", time: 20, timepay: 9000},
+		{name:"박길동", time: 10, timepay: 12000},
+		{name:"최길동", time: 35, timepay: 12000}
+	]
+	
+	for(pay of payList){
+		if(pay.time>=20)
+			pay.plus = (pay.time-20) * pay.timepay * 0.5;
+		else
+			pay.plus = 0;
+		pay.pay = pay.time * pay.timepay
+		pay.total = pay.pay + pay.plus
+		
+		console.log(pay.name, pay.time, pay.pay, pay.total)
+	}
+
+</script>
